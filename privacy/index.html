@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · Sonar Lock</title><meta name="description" content="Privacy Policy for the game Sonar Lock.">
-<link rel="icon" href="../icon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500&family=Saira+Stencil+One&display=swap" rel="stylesheet"><style>
+<link rel="icon" href="../icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500&family=Saira+Stencil+One&display=swap" rel="stylesheet"><style>
 :root { --bg: #0b1724; --panel: #122b45; --text: #e8e1cf; --dim: #a9b4c2; --accent: #d9452b; --line: #2f6fb3; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 'IBM Plex Sans Condensed', system-ui, sans-serif; }
@@ -12,10 +12,10 @@ h1 { font-size: 2.4rem; line-height: 1.1; margin: 0 0 8px; }
 h2 { font-size: 1.4rem; margin: 2rem 0 0.5rem; color: var(--text); }
 a { color: #8fc1ff; }
 header.top { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--panel); }
-header.top img { width: 36px; height: 36px; }
+header.top img { width: 36px; height: 36px; border-radius: 8px; }
 header.top a { color: var(--text); text-decoration: none; font-size: 1.3rem; }
 .hero { text-align: center; padding: 40px 0 16px; }
-.hero img.icon { width: 128px; height: 128px; }
+.hero img.icon { width: 128px; height: 128px; border-radius: 24px; }
 .hero h1 { font-size: 3.2rem; margin-top: 16px; }
 .tag { color: var(--dim); font-size: 1.15rem; }
 .badge { display: inline-block; margin-top: 20px; padding: 10px 18px; border: 2px solid var(--accent); color: var(--text); border-radius: 6px; }
@@ -27,59 +27,104 @@ footer { color: var(--dim); font-size: 0.9rem; border-top: 1px solid var(--panel
 footer a { color: var(--dim); margin-right: 14px; }
 @media (max-width: 480px) { .hero h1 { font-size: 2.4rem; } .grid { grid-template-columns: repeat(2, 1fr); } }
 </style></head>
-<body><header class="top"><img src="../icon.svg" alt=""><a class="brand" href="../">Sonar Lock</a></header>
+<body><header class="top"><img src="../icon.png" alt=""><a class="brand" href="../">Sonar Lock</a></header>
 <main><h1>Privacy Policy</h1>
-<p><strong>Sonar Lock</strong>, last updated 2026-10-17</p>
+<p><strong>Sonar Lock</strong>, last updated 2026-10-27</p>
 <p>Published by SC DREAMWEAVER SRL (Constanța, Romania; registration J2016002906134, CUI 36847392), developed by InAllHonesty.</p>
-<p>This policy explains what information the game uses. We want it short and honest.</p>
-<h2>What we collect</h2>
-<p><strong>Only if you agree: anonymous usage statistics.</strong> The game asks once whether you want to share them, and you can change your answer any time in <strong>Options → Share anonymous statistics</strong>. If you say no, nothing is sent.</p>
-<p>When you agree, the game uses <strong>Google Analytics for Firebase</strong> (provided by Google Ireland Limited) to record:</p>
+<p>This policy explains what information the game uses, why, and what you can do about it. We keep it short and honest.</p>
+<h2>In short</h2>
 <ul>
-<li><strong>game events:</strong> a patrol started (which captain), a battle's round, result, the hull breaches and losing streak so far, and whether the opponent was a bot or a saved submarine, how a patrol ended, the tutorial finished or skipped, and which Captain's Orders item was picked;</li>
-<li><strong>optional ad offers:</strong> when an offer to watch an ad for a reward (such as Second Chance or Help me up) is shown, tapped and watched to the end, with the round, wins and breaches at that moment. This tells us where players need help. It never includes the ad's content or your advertising ID;</li>
-<li><strong>automatic app information:</strong> first launch, sessions and time played, the app version, the device model and operating system version, language and approximate country (from the network, not GPS);</li>
+<li><strong>No sign-up, no name, no email, no contacts, no precise location.</strong> The game never asks for them.</li>
+<li><strong>Optional:</strong> anonymous usage statistics (only if you say yes) and personalised ads (only where you agree, through Google's form).</li>
+<li><strong>Needed for the game to work online:</strong> an anonymous ID created by the game, your submarine builds (other players fight them), and a backup of your progress.</li>
+<li><strong>Ads only when you choose to watch one</strong> for a bonus.</li>
+<li><strong>Reminders and review requests stay on your phone.</strong> We receive nothing from them.</li>
+</ul>
+<h2>1. The anonymous ID</h2>
+<p>To use our online features, the game creates an <strong>anonymous account</strong> with <strong>Google Firebase Authentication</strong> (Google Ireland Limited) the first time it goes online. It is a random ID. It isn't linked to your name, email, phone number or Google account, and there is no password. The ID is stored on your phone. When it is created and renewed, Google sees your device's IP address, as with any internet request.</p>
+<ul>
+<li><strong>Why:</strong> so our server knows which shared builds and which cloud save belong to the same game installation, and so nobody else can write to them.</li>
+<li><strong>Legal basis (GDPR):</strong> needed to provide the online game you use (contract).</li>
+<li><strong>If you uninstall the game,</strong> the ID is gone from your phone. Data left on our server can no longer be linked to your new installation.</li>
+</ul>
+<h2>2. Your submarine builds are shared with other players</h2>
+<p>Other players fight copies of your submarine, and you fight theirs. From round 6 on, after each battle, the game sends the build you fought with to our server (Google Cloud Firestore) and downloads other players' builds.</p>
+<ul>
+<li><strong>What's sent:</strong> the items and where they sit, the round, your captain and their level, the game version, your anonymous ID and the time. <strong>No name, email or advertising ID.</strong> Other players see a made-up call sign, never anything that identifies you.</li>
+<li><strong>Who sees it:</strong> other players, as opponents.</li>
+<li><strong>How long:</strong> at most <strong>12 months</strong>. Builds from older versions of the game are removed sooner, once an update changes the game's balance. An automatic clean-up deletes them every day.</li>
+<li><strong>Limit:</strong> to keep the shared service working for everyone, our server counts how many builds each anonymous ID shares per day (at most 50). The count holds only the day and the number, and is deleted with the rest of your online data.</li>
+<li><strong>Legal basis (GDPR):</strong> part of how the game is played (contract).</li>
+</ul>
+<h2>3. Cloud save</h2>
+<p>The game keeps a copy of your progress on our server (Google Cloud Firestore) so a broken or reset phone doesn't lose it. The copy is tied to your anonymous ID.</p>
+<ul>
+<li><strong>What's sent:</strong> your game profile (currencies, levels, unlocks, quests, collection, settings saved in the profile, and the history of your last patrols), daily backup copies of it, <strong>your phone's model name</strong> (for example "SM-G965F", so you can tell copies apart when asked "which progress?"), and a record of each purchase (see section 4).</li>
+<li><strong>Who sees it:</strong> only your installation (our database rules allow nobody else to read it) and us, if you write to us for help.</li>
+<li><strong>How long:</strong> until you ask us to delete it. Backups: the newest 3 daily copies and 2 others; older ones are deleted automatically.</li>
+<li><strong>Legal basis (GDPR):</strong> needed to provide the backup the game offers (contract).</li>
+</ul>
+<h2>4. Purchases</h2>
+<p>Gold packs, the starter pack and the Admiralty Commission are sold through <strong>Google Play Billing</strong>. Google handles the payment. <strong>We never see your card or bank details, your name or your email.</strong></p>
+<ul>
+<li><strong>What we keep:</strong> for each purchase, the product, Google's purchase token, the time and the Gold given. This is kept on your phone and in your cloud save, so a purchase is never lost or given twice.</li>
+<li><strong>Legal basis (GDPR):</strong> needed to deliver what you bought (contract), and our legal duty to keep sales records.</li>
+<li><strong>Refunds and payment questions</strong> are handled by Google Play under its own terms.</li>
+</ul>
+<h2>5. Anonymous statistics (only if you agree)</h2>
+<p>The game asks once whether you want to share anonymous statistics, and you can change your answer any time in <strong>Options → Share anonymous statistics</strong>. Until you say yes, nothing is collected. Statistics are switched off inside the app until then.</p>
+<p>When you agree, the game uses <strong>Google Analytics for Firebase</strong> (Google Ireland Limited) to record:</p>
+<ul>
+<li><strong>game events:</strong> a patrol started (which captain, how many Blueprints), a battle's round, result, hull breaches and losing streak so far, and whether the opponent was a bot or another player's build; how a patrol ended; the tutorial finished or skipped; which Captain's Orders item was picked;</li>
+<li><strong>shop events:</strong> which product was tapped and which was bought (never prices you paid, card details or your identity);</li>
+<li><strong>optional ad offers:</strong> when an offer to watch an ad for a reward is shown, skipped, tapped and watched to the end, with the round, wins and breaches at that moment;</li>
+<li><strong>your answer</strong> to the statistics question;</li>
+<li><strong>automatic app information:</strong> first launch, sessions and time played, app version, device model and operating system version, language and approximate country (from the network, not GPS);</li>
 <li><strong>an app-instance ID:</strong> a random identifier for this installation, not linked to your name, email or Google account.</li>
 </ul>
-<p><strong>We never collect</strong> your name, email, contacts or precise location, there are no accounts to sign up for, and <strong>statistics never use your advertising ID</strong>. We use the statistics only to understand how the game is played and to improve it, for example its balance and difficulty. We don't sell them or use them for advertising.</p>
-<p><strong>Who processes the data:</strong> Google, as our processor, under its Firebase terms. Google may process it outside the EU under the EU's standard contractual clauses.</p>
+<p><strong>Statistics never use your advertising ID.</strong> We use them only to understand how the game is played and to improve it, for example its balance and difficulty. We don't sell them or use them for advertising.</p>
 <ul>
-<li><strong>Retention:</strong> statistics are kept for <strong>14 months</strong>, then deleted.</li>
-<li><strong>Legal basis (GDPR):</strong> your <strong>consent</strong>, which you can withdraw at any time in Options; withdrawing stops all collection from then on.</li>
+<li><strong>Retention:</strong> 14 months, then deleted.</li>
+<li><strong>Legal basis (GDPR):</strong> your consent, which you can withdraw any time in Options. Withdrawing stops collection from then on.</li>
 </ul>
-<h2>Your submarine builds are shared</h2>
-<p>Other players fight copies of your submarine, and you fight theirs. After each battle from round 6 on, the game sends the build you fought with (the items, their places, the round and your captain) to our server, Google Firebase, and downloads other players' builds.</p>
-<ul>
-<li><strong>What's shared:</strong> only the build and an <strong>anonymous ID</strong> that the game creates. There's no name, email or advertising ID. Opponents are shown with a made-up call sign.</li>
-<li><strong>Who sees it:</strong> other players see your builds as opponents, but nothing that identifies you.</li>
-<li><strong>How long it's kept:</strong> builds stay on the server so they can be used as opponents, and older ones stop being picked.</li>
-<li><strong>Legal basis (GDPR):</strong> it is part of how the game is played, so it's needed to provide the game you asked for. Statistics are separate and stay optional.</li>
-<li><strong>Deleting it:</strong> you can ask us to delete your builds by email. Uninstalling the game removes the anonymous ID from your phone, so later builds can't be linked to earlier ones.</li>
-</ul>
-<h2>What stays on your device</h2>
-<p>The game saves your progress on your own device only: your profile (currencies, levels, unlocks, quests), your settings and a patrol in progress. This data never leaves the device. Uninstalling the game deletes it.</p>
-<h2>Ads</h2>
+<h2>6. Ads</h2>
 <p>The game shows <strong>only ads you choose to watch</strong> for a bonus (for example double Supplies or a quest refresh). Ads are never forced, and a player who never watches one still gets every reward that isn't an ad bonus.</p>
-<p>Ads come from <strong>Google AdMob</strong> (provided by Google Ireland Limited). When ads may be shown, Google receives:</p>
+<p>Ads come from <strong>Google AdMob</strong> (Google Ireland Limited). When ads may be shown, Google receives:</p>
 <ul>
 <li>your device's <strong>advertising ID</strong>;</li>
 <li><strong>device and app information:</strong> model, operating system, app version and language;</li>
 <li>your <strong>IP address</strong>, from which it estimates an approximate location;</li>
 <li><strong>ad interactions:</strong> which ads were shown and whether you watched or tapped them.</li>
 </ul>
-<p><strong>Your choice:</strong> where the law requires it (for example in the EU, EEA, UK and Switzerland), Google's consent form asks the first time you start the game whether ads may be <strong>personalized</strong>. If you say no, you still see ads, but they're based only on context, not on your interests. Change your answer any time in <strong>Options → Ad privacy choices</strong>. On Android you can also reset or delete your advertising ID in the system settings (Settings → Google → Ads, or Privacy → Ads).</p>
-<p>Google uses this information under its own policies: <a href="https://policies.google.com/technologies/ads.">https://policies.google.com/technologies/ads.</a> We don't receive your advertising ID or any personal information from the ads.</p>
+<p><strong>Your choice:</strong> where the law requires it (for example in the EU, EEA, UK and Switzerland), Google's consent form asks before ads are shown whether they may be <strong>personalised</strong>. If you say no, you still see ads, but they're based only on context, not on your interests. Change your answer any time in <strong>Options → Ad privacy choices</strong>. You can also reset or delete your advertising ID in Android's settings (Settings → Google → Ads, or Privacy → Ads).</p>
+<p>Ads in the game are limited to content suitable for teenagers. Google uses this information under its own policies: <a href="https://policies.google.com/technologies/ads.">https://policies.google.com/technologies/ads.</a> We don't receive your advertising ID or any personal information from the ads.</p>
 <ul>
-<li><strong>Legal basis (GDPR):</strong> your <strong>consent</strong>, collected by Google's consent form where the law requires it; you can withdraw it any time in Options → Ad privacy choices.</li>
+<li><strong>Legal basis (GDPR):</strong> your consent, collected by Google's form where the law requires it.</li>
 </ul>
-<h2>Children</h2>
-<p>The game is not directed at children under 13, and we don't knowingly collect information from anyone.</p>
-<h2>Your rights</h2>
-<p>You can turn statistics off at any time in Options. Under the GDPR you may also ask us for access to or deletion of statistics linked to your app-instance ID, by writing to the address below. Because the statistics are anonymous to us, include the date you installed the game so we can help. You can delete everything stored on your phone by uninstalling the game or clearing its storage. You also have the right to complain to your data protection authority (in Romania: ANSPDCP).</p>
-<h2>Changes</h2>
-<p>We will update this page when the game changes what it does with information, and change the date above.</p>
-<h2>Who is responsible</h2>
-<p>The controller for any information is SC DREAMWEAVER SRL, Str. Panselei 6A, bl. C2A, ap. 13, Constanța 900598, Romania.</p>
+<h2>7. Phone reminders (only if you turn them on)</h2>
+<p>If you say yes to reminders (or turn them on in Options → Reminders), the game asks Android to show at most one notification a day, for up to 3 days, when your daily reward is ready. They're scheduled <strong>on your phone</strong>. Nothing about them is sent to us or to anyone else. Turn them off in Options or in Android's notification settings.</p>
+<h2>8. Review requests</h2>
+<p>After some won patrols the game may ask Google Play to show its rating card. Google decides whether it appears. If you leave a review, it goes to Google Play under your Google account, <strong>under Google's terms</strong>. We never learn whether you rated the game. The game remembers only when it asked, on your phone.</p>
+<h2>9. What stays on your phone</h2>
+<p>Your progress, your settings and a patrol in progress are saved on your phone. Uninstalling the game or clearing its storage deletes them. A copy of your progress (not a patrol in progress) is also kept in the cloud (section 3).</p>
+<h2>10. Children</h2>
+<p>The game is not directed at children under 13, and we don't knowingly collect information from them. If you believe a child has sent us information, write to us and we'll delete it.</p>
+<h2>11. Your rights and deleting your data</h2>
+<p>Under the GDPR you can ask us for access to, correction of or <strong>deletion</strong> of data about you. You can also object, or withdraw consent at any time.</p>
+<ul>
+<li><strong>Statistics:</strong> turn them off in Options. To have past statistics deleted, write to us with the date you installed the game. They aren't linked to a name, so that helps us find them.</li>
+<li><strong>Shared builds and cloud save:</strong> in the game, open <strong>Options → Delete my online data</strong>. After you confirm, it deletes your shared builds, your cloud save (with its backups and purchase records) and your anonymous ID from our server straight away. Your progress on your phone stays. Copies of your builds that other players' games already downloaded stay on their phones until their game replaces them (it keeps only the latest few per round). If you keep playing online afterwards, the game creates a new anonymous ID. You can also write to us: copy your ID from <strong>Options → Your player ID</strong> and include it, so we can find your data.</li>
+<li><strong>Everything on your phone:</strong> uninstall the game or clear its storage.</li>
+</ul>
+<p>You also have the right to complain to your data protection authority (in Romania: ANSPDCP, www.dataprotection.ro).</p>
+<h2>12. Who processes the data</h2>
+<p>Google (Firebase Authentication, Cloud Firestore, Google Analytics for Firebase, AdMob, Play Billing) processes data for us under its terms. Google may process data outside the EU under the EU's standard contractual clauses. We don't sell data, and we share it with nobody else.</p>
+<h2>13. Security</h2>
+<p>Everything the game sends goes over encrypted connections (HTTPS). Our database rules allow each installation to read and write only its own save and purchases, and to add (never change) its own shared builds.</p>
+<h2>14. Changes</h2>
+<p>We'll update this page when the game changes what it does with information, and change the date at the top. Big changes will also be announced in the game.</p>
+<h2>15. Who is responsible</h2>
+<p>The controller is SC DREAMWEAVER SRL, Str. Panselei 6A, bl. C2A, ap. 13, Constanța 900598, Romania.</p>
 <h2>Contact</h2>
-<p>Questions: sonarlock.game@gmail.com</p><footer><a href="../privacy/">Privacy Policy</a><a href="../terms/">Terms of Use</a><a href="../consent/">Consent settings</a><a href="mailto:sonarlock.game@gmail.com">Contact</a><br>&copy; SC DREAMWEAVER SRL &middot; developed by InAllHonesty</footer></main>
+<p>Questions or requests: sonarlock.game@gmail.com</p><footer><a href="../privacy/">Privacy Policy</a><a href="../terms/">Terms of Use</a><a href="../consent/">Consent settings</a><a href="mailto:sonarlock.game@gmail.com">Contact</a><br>&copy; SC DREAMWEAVER SRL &middot; developed by InAllHonesty</footer></main>
 </body></html>
