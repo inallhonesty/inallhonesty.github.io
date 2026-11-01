@@ -29,49 +29,58 @@ footer a { color: var(--dim); margin-right: 14px; }
 </style></head>
 <body><header class="top"><img src="../icon.png" alt=""><a class="brand" href="../">Sonar Lock</a></header>
 <main><h1>Privacy Policy</h1>
-<p><strong>Sonar Lock</strong>, last updated 2026-10-27</p>
+<p><strong>Sonar Lock</strong>, last updated 2026-10-30</p>
 <p>Published by SC DREAMWEAVER SRL (Constanța, Romania; registration J2016002906134, CUI 36847392), developed by InAllHonesty.</p>
 <p>This policy explains what information the game uses, why, and what you can do about it. We keep it short and honest.</p>
 <h2>In short</h2>
 <ul>
-<li><strong>No sign-up, no name, no email, no contacts, no precise location.</strong> The game never asks for them.</li>
+<li><strong>No sign-up of our own, no name, no email, no contacts, no precise location.</strong> You sign in with Google Play Games, and we keep only its player ID, never your gamer tag, name or email.</li>
 <li><strong>Optional:</strong> anonymous usage statistics (only if you say yes) and personalised ads (only where you agree, through Google's form).</li>
-<li><strong>Needed for the game to work online:</strong> an anonymous ID created by the game, your submarine builds (other players fight them), and a backup of your progress.</li>
+<li><strong>Needed for the game to work online:</strong> an account ID linked to your Play Games player ID, your submarine builds (other players fight them), a backup of your progress, and, if you play Ranked, your rank and ranked patrols.</li>
 <li><strong>Ads only when you choose to watch one</strong> for a bonus.</li>
 <li><strong>Reminders and review requests stay on your phone.</strong> We receive nothing from them.</li>
 </ul>
-<h2>1. The anonymous ID</h2>
-<p>To use our online features, the game creates an <strong>anonymous account</strong> with <strong>Google Firebase Authentication</strong> (Google Ireland Limited) the first time it goes online. It is a random ID. It isn't linked to your name, email, phone number or Google account, and there is no password. The ID is stored on your phone. When it is created and renewed, Google sees your device's IP address, as with any internet request.</p>
+<h2>1. Your account ID (Google Play Games)</h2>
+<p>The game signs you in with <strong>Google Play Games</strong> (Google Ireland Limited), Google's own game profile, the first time you start it. We don't run a sign-up of our own and there is no password. Google tells our server your <strong>Play Games player ID</strong>, a number Google made for Sonar Lock. Our server turns it into your account ID ("pgs_" followed by that number) and signs you in to <strong>Google Firebase Authentication</strong> with it. <strong>We don't receive or keep your gamer tag, your name, your email or your Google account details.</strong> When you sign in, Google and our server see your device's IP address, as with any internet request.</p>
 <ul>
-<li><strong>Why:</strong> so our server knows which shared builds and which cloud save belong to the same game installation, and so nobody else can write to them.</li>
+<li><strong>Why:</strong> so our servers know which shared builds, which cloud save and which ranked records are yours, so nobody else can write to them, and so your progress and rank follow you to a new phone.</li>
 <li><strong>Legal basis (GDPR):</strong> needed to provide the online game you use (contract).</li>
-<li><strong>If you uninstall the game,</strong> the ID is gone from your phone. Data left on our server can no longer be linked to your new installation.</li>
+<li><strong>If you uninstall the game,</strong> the ID stays tied to your Play Games profile: when you sign in again, your online data is yours again. To remove it, use Delete my online data (section 12).</li>
 </ul>
 <h2>2. Your submarine builds are shared with other players</h2>
 <p>Other players fight copies of your submarine, and you fight theirs. From round 6 on, after each battle, the game sends the build you fought with to our server (Google Cloud Firestore) and downloads other players' builds.</p>
 <ul>
-<li><strong>What's sent:</strong> the items and where they sit, the round, your captain and their level, the game version, your anonymous ID and the time. <strong>No name, email or advertising ID.</strong> Other players see a made-up call sign, never anything that identifies you.</li>
+<li><strong>What's sent:</strong> the items and where they sit, the round, your captain and their level, the game version, your account ID and the time. <strong>No name, email or advertising ID.</strong> Other players see a made-up call sign, never anything that identifies you.</li>
 <li><strong>Who sees it:</strong> other players, as opponents.</li>
 <li><strong>How long:</strong> at most <strong>12 months</strong>. Builds from older versions of the game are removed sooner, once an update changes the game's balance. An automatic clean-up deletes them every day.</li>
-<li><strong>Limit:</strong> to keep the shared service working for everyone, our server counts how many builds each anonymous ID shares per day (at most 50). The count holds only the day and the number, and is deleted with the rest of your online data.</li>
+<li><strong>Limit:</strong> to keep the shared service working for everyone, our server counts how many builds each account ID shares per day (at most 50). The count holds only the day and the number, and is deleted with the rest of your online data.</li>
 <li><strong>Legal basis (GDPR):</strong> part of how the game is played (contract).</li>
 </ul>
 <h2>3. Cloud save</h2>
-<p>The game keeps a copy of your progress on our server (Google Cloud Firestore) so a broken or reset phone doesn't lose it. The copy is tied to your anonymous ID.</p>
+<p>The game keeps a copy of your progress on our server (Google Cloud Firestore) so a broken or reset phone doesn't lose it. The copy is tied to your account ID.</p>
 <ul>
-<li><strong>What's sent:</strong> your game profile (currencies, levels, unlocks, quests, collection, settings saved in the profile, and the history of your last patrols), daily backup copies of it, <strong>your phone's model name</strong> (for example "SM-G965F", so you can tell copies apart when asked "which progress?"), and a record of each purchase (see section 4).</li>
-<li><strong>Who sees it:</strong> only your installation (our database rules allow nobody else to read it) and us, if you write to us for help.</li>
+<li><strong>What's sent:</strong> your game profile (currencies, levels, unlocks, quests, collection, settings saved in the profile, and the history of your last patrols), daily backup copies of it, <strong>your phone's model name</strong> (for example "SM-G965F", so you can tell copies apart when asked "which progress?"), and a record of each purchase (see section 5).</li>
+<li><strong>Who sees it:</strong> only you (our database rules allow nobody else to read it), our ranked server when you start a ranked patrol (section 4), and us, if you write to us for help.</li>
 <li><strong>How long:</strong> until you ask us to delete it. Backups: the newest 3 daily copies and 2 others; older ones are deleted automatically.</li>
 <li><strong>Legal basis (GDPR):</strong> needed to provide the backup the game offers (contract).</li>
 </ul>
-<h2>4. Purchases</h2>
+<h2>4. Ranked</h2>
+<p>Ranked patrols are played against our own <strong>ranked server</strong>, a computer we run on <strong>Oracle Cloud</strong> (Oracle). It checks every ranked battle itself, so nobody can cheat their way up.</p>
+<ul>
+<li><strong>What it keeps about you:</strong> your account ID; your <strong>call sign</strong> (a made-up name our ranked server creates from your ID, shown on the leaderboard and to the players you meet, never your gamer tag or anything the game sends); your <strong>rank, points and a hidden matching rating</strong>; the highest rank you reached each season (for the season rewards); your <strong>ranked patrols</strong> (the moves you made, the wins and defeats); <strong>your ranked submarines</strong>, which other ranked players fight like shared builds; and a short <strong>battle record</strong> (your rank, whether the opponent was a computer player, and whether you won) used to keep the computer opponents fair.</li>
+<li><strong>What it checks:</strong> when you start a ranked patrol it reads your cloud save (section 3) to see which captains, levels and Blueprints you own and when the cloud save was first made, keeps a short record of those counts, and asks Google Play whether each purchase in it was real, was made on your account and wasn't refunded, and whether your Admiralty Commission is active. Every hour it also asks Google Play which purchases of the game were refunded or charged back; a refunded purchase no longer counts for Ranked. When you watch an ad for a ranked help, Google AdMob tells our server that the ad was watched (your account ID and which patrol and round), so the help counts.</li>
+<li><strong>Who sees it:</strong> other players see your call sign, rank and points on the leaderboard (the top 100), and your submarine, call sign and rank when they fight it. Nobody sees your account ID.</li>
+<li><strong>How long:</strong> your ranked submarines, battle records and finished ranked patrols (their moves and the opponents met, which are kept as scrambled codes, never other players' IDs) are kept for the <strong>current and the previous season</strong> (a season is 8 weeks), then deleted automatically. Your rank, points and unclaimed season rewards are kept while you play, until you delete them. The ranked server's logs, which can show your account ID (for example when a check blocks Ranked), are kept for <strong>at most 14 days</strong>. Backups of the ranked server are encrypted before they leave the server (only we hold the key) and kept for a week; the copies on the server itself are kept for 3 days.</li>
+<li><strong>Legal basis (GDPR):</strong> needed to provide the ranked game you choose to play (contract), and our legitimate interest in fair play (the cheating checks).</li>
+</ul>
+<h2>5. Purchases</h2>
 <p>Gold packs, the starter pack and the Admiralty Commission are sold through <strong>Google Play Billing</strong>. Google handles the payment. <strong>We never see your card or bank details, your name or your email.</strong></p>
 <ul>
-<li><strong>What we keep:</strong> for each purchase, the product, Google's purchase token, the time and the Gold given. This is kept on your phone and in your cloud save, so a purchase is never lost or given twice.</li>
+<li><strong>What we keep:</strong> for each purchase, the product, Google's purchase token, the time and the Gold given. Each purchase also carries a scrambled form of your account ID (a hash; it can't be turned back into the ID), which Google keeps with the purchase so our ranked server can check the purchase was made on your account. This is kept on your phone and in your cloud save, so a purchase is never lost or given twice. If you play Ranked, our ranked server also keeps every purchase token it checks with Google (the ones Google confirmed, the ones it refused, and Admiralty Commission tokens), with the product and the Gold it counted, so a purchase counts once and only for the account that made it. They are kept while you play Ranked; deleting your online data replaces them with the scrambled records in section 12.</li>
 <li><strong>Legal basis (GDPR):</strong> needed to deliver what you bought (contract), and our legal duty to keep sales records.</li>
 <li><strong>Refunds and payment questions</strong> are handled by Google Play under its own terms.</li>
 </ul>
-<h2>5. Anonymous statistics (only if you agree)</h2>
+<h2>6. Anonymous statistics (only if you agree)</h2>
 <p>The game asks once whether you want to share anonymous statistics, and you can change your answer any time in <strong>Options → Share anonymous statistics</strong>. Until you say yes, nothing is collected. Statistics are switched off inside the app until then.</p>
 <p>When you agree, the game uses <strong>Google Analytics for Firebase</strong> (Google Ireland Limited) to record:</p>
 <ul>
@@ -87,7 +96,7 @@ footer a { color: var(--dim); margin-right: 14px; }
 <li><strong>Retention:</strong> 14 months, then deleted.</li>
 <li><strong>Legal basis (GDPR):</strong> your consent, which you can withdraw any time in Options. Withdrawing stops collection from then on.</li>
 </ul>
-<h2>6. Ads</h2>
+<h2>7. Ads</h2>
 <p>The game shows <strong>only ads you choose to watch</strong> for a bonus (for example double Supplies or a quest refresh). Ads are never forced, and a player who never watches one still gets every reward that isn't an ad bonus.</p>
 <p>Ads come from <strong>Google AdMob</strong> (Google Ireland Limited). When ads may be shown, Google receives:</p>
 <ul>
@@ -101,29 +110,35 @@ footer a { color: var(--dim); margin-right: 14px; }
 <ul>
 <li><strong>Legal basis (GDPR):</strong> your consent, collected by Google's form where the law requires it.</li>
 </ul>
-<h2>7. Phone reminders (only if you turn them on)</h2>
+<h2>8. Phone reminders (only if you turn them on)</h2>
 <p>If you say yes to reminders (or turn them on in Options → Reminders), the game asks Android to show at most one notification a day, for up to 3 days, when your daily reward is ready. They're scheduled <strong>on your phone</strong>. Nothing about them is sent to us or to anyone else. Turn them off in Options or in Android's notification settings.</p>
-<h2>8. Review requests</h2>
+<h2>9. Review requests</h2>
 <p>After some won patrols the game may ask Google Play to show its rating card. Google decides whether it appears. If you leave a review, it goes to Google Play under your Google account, <strong>under Google's terms</strong>. We never learn whether you rated the game. The game remembers only when it asked, on your phone.</p>
-<h2>9. What stays on your phone</h2>
-<p>Your progress, your settings and a patrol in progress are saved on your phone. Uninstalling the game or clearing its storage deletes them. A copy of your progress (not a patrol in progress) is also kept in the cloud (section 3).</p>
-<h2>10. Children</h2>
+<h2>10. What stays on your phone</h2>
+<p>Your progress, your settings and a patrol in progress are saved on your phone. Uninstalling the game or clearing its storage deletes them. A copy of your progress (not a patrol in progress) is also kept in the cloud (section 3). A ranked patrol in progress is kept by our ranked server (section 4).</p>
+<h2>11. Children</h2>
 <p>The game is not directed at children under 13, and we don't knowingly collect information from them. If you believe a child has sent us information, write to us and we'll delete it.</p>
-<h2>11. Your rights and deleting your data</h2>
+<h2>12. Your rights and deleting your data</h2>
 <p>Under the GDPR you can ask us for access to, correction of or <strong>deletion</strong> of data about you. You can also object, or withdraw consent at any time.</p>
 <ul>
 <li><strong>Statistics:</strong> turn them off in Options. To have past statistics deleted, write to us with the date you installed the game. They aren't linked to a name, so that helps us find them.</li>
-<li><strong>Shared builds and cloud save:</strong> in the game, open <strong>Options → Delete my online data</strong>. After you confirm, it deletes your shared builds, your cloud save (with its backups and purchase records) and your anonymous ID from our server straight away. Your progress on your phone stays. Copies of your builds that other players' games already downloaded stay on their phones until their game replaces them (it keeps only the latest few per round). If you keep playing online afterwards, the game creates a new anonymous ID. You can also write to us: copy your ID from <strong>Options → Your player ID</strong> and include it, so we can find your data.</li>
+<li><strong>Shared builds, cloud save and Ranked:</strong> in the game, open <strong>Options → Delete my online data</strong>. After you confirm, it deletes your shared builds, your cloud save (with its backups and purchase records), your ranked records (rank, points, rating, ranked patrols and submarines, battle records, season rewards and your place on the leaderboard) and your account from our servers straight away. Your progress on your phone stays. If one of our servers can't be reached, nothing is skipped: the game says so and you can try again. On the ranked server, players who fought your submarine keep no trace of your account: you are taken out of their lists of opponents met, and your call sign is replaced with "sailor" in what the server keeps of their patrols. Your submarine stays only in the last answer of a ranked patrol another player is still playing, which the server must be able to send again (it goes when that patrol ends, and with the patrol at the latest after the next season). Copies of your builds that other players' games already downloaded stay on their phones until their game replaces them (it keeps only the latest few per round), and so does what their game shows of past battles. The ranked server's encrypted weekly backups age out within a week; if we ever restore one, your deletion is applied again (the server keeps a log of deletions for 14 days, holding only a scrambled form of the account and the time). If you keep playing online afterwards, you start again with no online data. You can also write to us: copy your ID from <strong>Options → Your player ID</strong> and include it, so we can find your data.</li>
+<li><strong>What deleting keeps (scrambled anti-cheat records):</strong> so that deleting can't be used to cheat Ranked, the ranked server keeps a few records that <strong>hold no account ID and no name</strong>. They are pseudonymised, not anonymous: they are scrambled records we can match only if the same account comes back:</li>
+<li>for <strong>each purchase code the ranked server checked</strong> (counted, refused, or an Admiralty Commission): a scrambled form of the purchase code and a scrambled form of your account (salted hashes; neither can be turned back into your ID), the product and the Gold it gave;</li>
+<li><strong>only while an account is blocked</strong> for suspicious activity: a scrambled account marker and the last game counts that passed the check (how many captains, levels and Blueprints).</li>
+</ul>
+<p>They only let the server recognise the same purchase, or the same blocked account, if it comes back. <strong>How long:</strong> they are deleted <strong>2 years after the account's last ranked activity</strong> (each return to Ranked counts as activity). <strong>Legal basis:</strong> our legitimate interest in fair play.</p>
+<ul>
 <li><strong>Everything on your phone:</strong> uninstall the game or clear its storage.</li>
 </ul>
 <p>You also have the right to complain to your data protection authority (in Romania: ANSPDCP, www.dataprotection.ro).</p>
-<h2>12. Who processes the data</h2>
-<p>Google (Firebase Authentication, Cloud Firestore, Google Analytics for Firebase, AdMob, Play Billing) processes data for us under its terms. Google may process data outside the EU under the EU's standard contractual clauses. We don't sell data, and we share it with nobody else.</p>
-<h2>13. Security</h2>
-<p>Everything the game sends goes over encrypted connections (HTTPS). Our database rules allow each installation to read and write only its own save and purchases, and to add (never change) its own shared builds.</p>
-<h2>14. Changes</h2>
+<h2>13. Who processes the data</h2>
+<p>Google (Play Games, Firebase Authentication, Cloud Firestore, Google Analytics for Firebase, AdMob, Play Billing) processes data for us under its terms. Oracle hosts our ranked server and its backups (Oracle Cloud) under its terms. Google and Oracle may process data outside the EU under the EU's standard contractual clauses. We don't sell data, and we share it with nobody else.</p>
+<h2>14. Security</h2>
+<p>Everything the game sends goes over encrypted connections (HTTPS). Our database rules allow each account to read and write only its own save and purchases, and to add (never change) its own shared builds. The ranked server accepts only signed-in requests and keeps its secrets on its own disk.</p>
+<h2>15. Changes</h2>
 <p>We'll update this page when the game changes what it does with information, and change the date at the top. Big changes will also be announced in the game.</p>
-<h2>15. Who is responsible</h2>
+<h2>16. Who is responsible</h2>
 <p>The controller is SC DREAMWEAVER SRL, Str. Panselei 6A, bl. C2A, ap. 13, Constanța 900598, Romania.</p>
 <h2>Contact</h2>
 <p>Questions or requests: sonarlock.game@gmail.com</p><footer><a href="../privacy/">Privacy Policy</a><a href="../terms/">Terms of Use</a><a href="../consent/">Consent settings</a><a href="mailto:sonarlock.game@gmail.com">Contact</a><br>&copy; SC DREAMWEAVER SRL &middot; developed by InAllHonesty</footer></main>
